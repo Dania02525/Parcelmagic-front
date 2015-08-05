@@ -6,14 +6,17 @@
         'transitions' : '../lib/durandal/js/transitions',
         'knockout': '../lib/knockout/knockout-3.3.0',
         'jquery': '../lib/jquery/jquery-1.9.1',
-        'materialize': '../lib/materialize/js/materialize'
+        'materialize': '../lib/materialize/js/materialize.amd',
+        'session': '../lib/session'
         
     },
     shim: {
+        'jquery': {
+            exports: '$'
+        },
         'materialize': {
-            deps: ['jquery'],
-            exports: 'jQuery'
-       }
+            deps: ['jquery']
+        }
     }
 });
 

@@ -9,10 +9,13 @@
         activate: function () {
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true }
+                { route: 'addresses', moduleId: 'viewmodels/addresses', nav: true },
+                { route: 'parcels', moduleId: 'viewmodels/parcels', nav: true },
+                { route: 'shipments', moduleId: 'viewmodels/shipments', nav: true },
+                { route: 'quote', moduleId: 'viewmodels/quote', nav: true },
             ]).buildNavigationModel();
             
             return router.activate();
-        }
+        }        
     };
 });
