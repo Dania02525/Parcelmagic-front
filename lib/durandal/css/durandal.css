@@ -36,6 +36,11 @@
     -o-transition: opacity 0.1s linear;
     transition: opacity 0.1s linear;
 }
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    min-width:450px;
+}
 
 .messageBox {
     min-width: 300px;
